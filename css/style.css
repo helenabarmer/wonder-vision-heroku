@@ -11,9 +11,9 @@ h1,h2,h3{
     font-family: 'Arimo', sans-serif;
 }
 h1 {
-    font-size: 22px;
+    font-size: 26px;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 38px;
     margin-bottom: 0px;
 }
@@ -54,12 +54,8 @@ header a {
     padding: 10px 0px;
 }
 .portfolio__single {
-    background: #fff;
-    margin-top: 35px;
-    box-shadow: 2px 2px 2px #ccc;
-    padding: 25px;
     position: relative;
-    margin-bottom: 40px;
+    padding: 25px;
 }
 .portfolio__single  h3 {
     font-size: 16px !important;
@@ -123,14 +119,27 @@ footer p {
     margin-bottom: 5px;
     padding-left: 38px;
 }
-.box-inline{
-    float: none !important;
-    display: inline-block;
-    width: 32.3333333% !important;
-    margin-right: auto;
-
+.portfolio--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
+.box-inline {
+    display: inline-block;
+    margin: 20px 20px 50px;
+    width: 30%;
+}
+.portfolio__single {
+    position: relative;
+    padding: 25px;
+    background: #fff;
+    box-shadow: 2px 2px 2px #ccc;
+    height: 100%;
+}
+.container-fluid{
+    padding:0px 20px;
+}
 .center {
     display: block;
     margin-left: auto;
@@ -149,7 +158,7 @@ footer p {
         text-align: center;
     }
     .box-inline{
-        width: 100% !important;
+        width: 92% !important;
     }
   
 }
