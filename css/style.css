@@ -20,6 +20,7 @@ h1 {
 header {
     box-shadow: 1px 2px 2px #ccc;
     background:#7b91a4;
+    position: relative;
 }
 header a {
     font-size: 14px;
@@ -145,8 +146,16 @@ footer p {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-  }
-
+}
+.logo{
+    width: 184px;
+    position: absolute;
+    left: 10px;
+    top:15px;
+}
+.logo img{
+    width: 100%;
+}
 @media screen and (max-width:600px){
  
     .portfolio__img{
@@ -156,9 +165,16 @@ footer p {
     h1{
         font-size: 16px;
         text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     .box-inline{
         width: 92% !important;
+    }
+    .logo {
+        margin: 10px auto;
+        width: 184px;
+        position: relative;
     }
   
 }
